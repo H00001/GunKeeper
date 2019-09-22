@@ -10,11 +10,13 @@ import top.gunplan.netty.GunBootServerBase;
  * @date 2019-09-21 21:54
  */
 public class GunKeeperServer implements GunBootServerBase {
+    @Override
     public int sync() throws Exception {
         System.out.println("sync hello gunkeeper");
         return 0;
     }
 
+    @Override
     public int stop() throws InterruptedException {
         return 0;
     }
